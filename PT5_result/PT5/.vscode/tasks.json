@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ build active file",
+			"command": "g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-Wall",
+				"-std=c++14",
+				"${file}",
+				"${fileDirname}/pt5mpi.cpp",
+				"-o",
+				"${fileDirname}/ptprj",
+				"-lmsmpi" 
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: \"g++\""
+		}
+	]
+}

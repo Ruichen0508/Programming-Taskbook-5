@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -l -vewnhibq -Fi/home/quruichen/Documents/PT5Source/PT5Lib/lib/x86_64-linux -Fu/home/quruichen/Documents/PT5Source/PT5Lib/ -FU/home/quruichen/Documents/PT5Source/PT5Lib/lib/x86_64-linux/ -FE/home/quruichen/Documents/PT5Source/PT5Lib/ -o/home/quruichen/Documents/PT5Source/PT5Lib/libpt5zfunc_en.so PT5ZFunc_en.lpr"/>
+</CONFIG>

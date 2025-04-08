@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++17  -shared -Wl,-soname,libpt5democpp_ru.so -o lib/libpt5democpp_ru.so CMakeFiles/pt5democpp_ru.dir/src_demo/DemoCpp.cpp.o CMakeFiles/pt5democpp_ru.dir/src_demo/pt5taskmaker.cpp.o 

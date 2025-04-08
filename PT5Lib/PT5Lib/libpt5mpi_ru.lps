@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="libpt5mpi_ru.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="4"/>
+        <CursorPos X="56" Y="26"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="libpt5mpi_ru.lpr"/>
+      </Position1>
+      <Position2>
+        <Filename Value="libpt5mpi_ru.lpr"/>
+        <Caret Line="9" Column="42"/>
+      </Position2>
+      <Position3>
+        <Filename Value="libpt5mpi_ru.lpr"/>
+        <Caret Line="26" Column="54" TopLine="7"/>
+      </Position3>
+      <Position4>
+        <Filename Value="libpt5mpi_ru.lpr"/>
+        <Caret Line="9" Column="44" TopLine="4"/>
+      </Position4>
+      <Position5>
+        <Filename Value="libpt5mpi_ru.lpr"/>
+        <Caret Line="14" Column="71" TopLine="4"/>
+      </Position5>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

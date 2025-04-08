@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1574718682"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -l- -vebq -vw-n-h-i-l-d-u-t-p-c-x- -Fi/home/shengyuli/EXPR/PT5Lib/lib/x86_64-linux -Fu/home/shengyuli/EXPR/PT5Lib/ -FU/home/shengyuli/EXPR/PT5Lib/lib/x86_64-linux/ -FE/home/shengyuli/EXPR/PT5Lib/ -o/home/shengyuli/EXPR/PT5Lib/libpt5core.so libpt5core.lpr"/>
+</CONFIG>

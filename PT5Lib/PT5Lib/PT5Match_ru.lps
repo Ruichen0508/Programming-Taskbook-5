@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="PT5Match_ru.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="12" Y="11"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="upt5match_ru.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="17" Y="45"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="PT5TaskMaker.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1471"/>
+        <CursorPos X="3" Y="1484"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="PT4Match_ru.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="PT5Match_ru.lpr"/>
+        <Caret Line="11" Column="39"/>
+      </Position1>
+      <Position2>
+        <Filename Value="PT5Match_ru.lpr"/>
+        <Caret Line="9" Column="42" TopLine="3"/>
+      </Position2>
+      <Position3>
+        <Filename Value="PT5TaskMaker.pas"/>
+        <Caret Line="165" Column="78" TopLine="154"/>
+      </Position3>
+      <Position4>
+        <Filename Value="PT5TaskMaker.pas"/>
+        <Caret Line="540" Column="19" TopLine="517"/>
+      </Position4>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

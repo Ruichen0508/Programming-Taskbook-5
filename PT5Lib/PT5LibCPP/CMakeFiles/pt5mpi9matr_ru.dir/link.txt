@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++17  -shared -Wl,-soname,libpt5mpi9matr_ru.so -o lib/libpt5mpi9matr_ru.so CMakeFiles/pt5mpi9matr_ru.dir/src_mpi9_ru/MPI9Matr_ru.cpp.o CMakeFiles/pt5mpi9matr_ru.dir/src_mpi9_ru/pt5taskmaker.cpp.o 

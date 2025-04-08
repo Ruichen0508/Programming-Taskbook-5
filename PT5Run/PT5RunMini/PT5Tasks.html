@@ -1,0 +1,74 @@
+<!-- Programming Taskbook 5.1 | Copyright (c) M. Abramyan, 1998-2023 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>PT5Tasks</title>
+<style type="text/css">
+H1{font-family:"Arial";font-size:20pt;text-indent:0px;margin-top:10px; margin-right:10px; margin-bottom:0px; margin-left:10px;}
+H2{font-family:"Arial";font-size:16pt;text-indent:0px;margin-top:5px; margin-right:10px; margin-bottom:0px; margin-left:10px;}
+P{font-family:"Times New Roman";text-align:left;font-size:12pt;text-indent:0px;margin-top:0px; margin-right:10px; margin-bottom:0px; margin-left:10px;}
+TD{font-family:"Times New Roman";font-size:12pt;}
+LI{font-family:"Times New Roman";font-size:12pt;}
+UL{font-family:"Times New Roman";font-size:12pt;}
+SUB{font-family:"Times New Roman";font-size:8pt;}
+SUP{font-family:"Times New Roman";font-size:8pt;}
+TABLE{margin-top:0px; margin-bottom:0px;}
+P.ptAuthor{text-align:right;font-size:10pt;font-style:italic;}
+P.ptTask{text-align:justify;text-indent:-50px;margin-top:5px; margin-left:60px;}
+P.ptTaskQuote{text-align:left;margin-left:120px;margin-top:5px;margin-bottom:0px;}
+P.ptTaskCenter{text-align:center;margin-left:60px;margin-top:5px;margin-bottom:0px;}
+P.ptTaskContinue{text-align:justify;margin-left:60px;margin-top:5px; }
+P.ptComment{text-align:justify;text-indent:50px;margin-top:5px;}
+P.ptCommentCenter{text-align:center;margin-top:0px;}
+P.ptCommentQuote{text-align:left;margin-left:120px;margin-top:0px;margin-bottom:0px;}
+P.ptCommentContinue{text-align:justify;margin-top:0px;}
+P.ptFooter{text-align:right;font-size:10pt;font-style:italic;margin-right:0px;}
+SPAN.ptSpecial{font-family:"Arial";}
+PRE{text-align:left;font-size:10pt;text-indent:0px;margin-top:5px; margin-right:10px; margin-bottom:0px; margin-left:60px;}
+CODE{font-size:10pt;}
+TT{font-size:10pt;}
+P.ptPicture{font-family:Arial, sans-serif;margin-top: 5px;margin-bottom: 5px;margin-left: 60px;font-size: small;color: #000080;text-indent: 0pt;text-align: justify}
+</style>
+</head><body>
+<h1>Порождающие паттерны</h1>
+<p class="ptAuthor">М.&nbsp;Э.&nbsp;Абрамян, 2022</p>
+<h2>Factory Method, Abstract Factory</h2>
+<p class="ptTask"><span class="ptSpecial">OOP1Creat1</span>. </p><p class="ptPicture"><img src="/home/quruichen/Documents/PT5RunMini/Graph/OOPFactoryMethod.png" alt="/home/quruichen/Documents/PT5RunMini/Graph/OOPFactoryMethod.png" border=1></p><p class="ptTaskContinue"><b>Factory Method</b> (<b>Фабричный метод</b>)&nbsp;&#8212; порождающий паттерн. </p><p class="ptTaskContinue">Известен также под именем <b>Virtual Constructor</b> (<b>Виртуальный конструктор</b>). </p><p class="ptTaskContinue"><span class="ptSpecial">Частота использования</span>: высокая. </p><p class="ptTaskContinue"><span class="ptSpecial">Назначение</span>: определяет интерфейс для создания объекта, но оставляет подклассам решение о том, какой класс инстанцировать. Фабричный метод позволяет классу делегировать инстанцирование подклассам. </p><p class="ptTaskContinue"><span class="ptSpecial">Участники</span>: </p><p class="ptTaskContinue">&#8226;&nbsp;<i>Product</i> (<i>Продукт</i>)&nbsp;&#8212; определяет интерфейс объектов, создаваемых фабричным методом; </p><p class="ptTaskContinue">&#8226;&nbsp;<i>ConcreteProduct</i> (<i>Конкретный продукт</i>)&nbsp;&#8212; реализует интерфейс Product; </p><p class="ptTaskContinue">&#8226;&nbsp;<i>Creator</i> (<i>Создатель</i>)&nbsp;&#8212; объявляет фабричный метод, возвращающий объект типа Product; может также определять реализацию фабричного метода по умолчанию, возвращающую некоторый конкретный продукт; реализует методы, в которых используется объект Product, созданный фабричным методом; </p><p class="ptTaskContinue">&#8226;&nbsp;<i>ConcreteCreator</i> (<i>Конкретный создатель</i>)&nbsp;&#8212; замещает фабричный метод для создания конкретного продукта. </p><p class="ptTaskContinue"><span class="ptSpecial">Задание 1</span>. Реализовать две иерархии классов, в одну из которых входят абстрактный создатель <tt>Creator</tt> и два конкретных создателя <tt>ConcreteCreator1</tt> и <tt>ConcreteCreator2</tt>, а в другую&nbsp;&#8212; абстрактный продукт <tt>Product</tt> и два конкретных продукта <tt>ConcreteProduct1</tt> и <tt>ConcreteProduct2</tt>. </p><p class="ptTaskContinue">Абстрактный класс <tt>Product</tt> содержит два абстрактных метода, связанных с получением и преобразованием строки: метод <tt>GetInfo</tt> без параметров, возвращающий строку, и метод <tt>Transform</tt> без параметров, который ничего не возвращает. Классы <tt>ConcreteProduct1</tt> и <tt>ConcreteProduct2</tt> содержат строковое поле <tt>info</tt>, которое инициализируется в конструкторе с помощью одноименного параметра, после чего в конструкторе класса <tt>ConcreteProduct1</tt> поле <tt>info</tt> преобразуется к нижнему регистру, а в конструкторе класса <tt>ConcreteProduct2</tt>&nbsp;&#8212; к верхнему. Метод <tt>GetInfo</tt> в каждом подклассе возвращает текущее значение поля <tt>info</tt>, а метод <tt>Transform</tt> преобразует это поле следующим образом: для <tt>ConcreteProduct1</tt> он добавляет дополнительный пробел после каждого непробельного символа поля <tt>info</tt> (кроме его последнего символа), а для <tt>ConcreteProduct2</tt> он добавляет два дополнительных символа * (звездочка) после каждого символа, отличного от звездочки (кроме последнего символа). </p><p class="ptTaskContinue">Абстрактный класс <tt>Creator</tt> содержит абстрактный фабричный метод <tt>FactoryMethod(info)</tt> со строковым параметром <tt>info</tt>, возвращающий ссылку на объект <tt>Product</tt>. Этот метод определяется в классах <tt>ConcreteCreator1</tt> и <tt>ConcreteCreator2</tt>, причем фабричный метод класса <tt>ConcreteCreator1</tt> создает объект типа <tt>ConcreteProduct1</tt>, а фабричный метод класса <tt>ConcreteCreator2</tt> создает объект типа <tt>ConcreteProduct2</tt>; в любом случае конструктору создаваемого объекта передается параметр <tt>info</tt> фабричного метода. </p><p class="ptTaskContinue">В абстрактном классе <tt>Creator</tt> дополнительно определить метод <tt>AnOperation(info)</tt>, который создает продукт с помощью фабричного метода, передавая ему параметр <tt>info</tt>, дважды вызывает метод <tt>Transform</tt> созданного продукта и с помощью его метода <tt>GetInfo</tt> возвращает полученный результат. Использование фабричного метода в методе <tt>AnOperation</tt> приводит к тому, что выполнение метода <tt>AnOperation</tt> в подклассах класса <tt>Creator</tt> дает различные результаты, зависящие от свойств создаваемых продуктов, причем такое поведение реализуется <i>без изменения кода</i> метода <tt>AnOperation</tt>. </p><p class="ptTaskContinue"><span class="ptSpecial">Тестирование разработанной системы классов</span>. Даны пять строк. Используя конкретных создателей 1 и 2, применить к каждой из данных строк метод <tt>AnOperation</tt> и вывести возвращаемый результат этого метода (вначале выводятся результаты для первой строки, затем для второй и т.&nbsp;д.).  </p><pre class="pt">class Product
+{
+public:
+    virtual string GetInfo() = 0;
+    virtual void Transform() = 0;
+    virtual ~Product()
+    {
+        Show(&quot;Product&quot;);
+    }
+};
+
+// Implement the ConcreteProduct1
+//   and ConcreteProduct2 descendant classes
+
+class Creator
+{
+protected:
+    virtual shared_ptr&lt;Product&gt; FactoryMethod(string info) = 0;
+public:
+    string AnOperation(string info);
+    virtual ~Creator()
+    {
+        Show(&quot;Creator&quot;);
+    }
+};
+
+string Creator::AnOperation(string info)
+{
+    auto p = FactoryMethod(info);
+    p-&gt;Transform();
+    p-&gt;Transform();
+    return p-&gt;GetInfo();
+}
+
+// Implement the ConcreteCreator1
+//   and ConcreteCreator2 descendant classes;
+//   the AnOperation method should not be
+//   overridden in these classes</pre>
+<hr noshade>
+<p class="ptFooter">Page generation date: 22-5-24.</p>
+</body></html>

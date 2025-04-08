@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "compilerPath": "g++", 
+            "includePath": [
+                "/usr/include" 
+            ],
+            "defines": [
+                "_DEBUG", 
+                "UNICODE", 
+                "_UNICODE" 
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x64" 
+        }
+    ],
+    "version": 4
+}

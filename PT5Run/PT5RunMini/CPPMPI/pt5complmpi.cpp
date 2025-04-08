@@ -1,0 +1,9 @@
+addfiles=pt5mpi.cpp;pt5mpi.hpp;.vscode/c_cpp_properties.json;.vscode/launch.json;.vscode/tasks.json
+compiler=/usr/bin/mpicxx
+cargs=-fdiagnostics-color=always||-Wall||-std=c++14||${fileDirname}/${fileName}||${fileDirname}/pt5mpi.cpp||-o||${fileDirname}/ptprj
+cwd=/usr/bin/
+exename=${fileDirname}/ptprj
+run=/usr/bin/mpiexec
+rargs=-n||${procNum}||${exeName}
+rwd=${fileDirname}
+timeout=5000
